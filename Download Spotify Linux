@@ -1,0 +1,15 @@
+### Download Spotify ###
+curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get update && sudo apt-get install spotify-client
+
+### SPICETIFY (Optional) ###
+  Don't be a Super User
+# Download Spicetify
+curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh
+# Problem Solving
+sudo chmod 777 /your/path/get/denied
+sudo chown -R name:name /usr/share/spotify
+# Spicetify Usage (Don't be a Super User!)
+  spicetify update
+  spicetify apply
