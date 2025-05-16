@@ -1,4 +1,4 @@
-### Download Spotify ###
+### DOWNLOAD SPOTIFY ###
 (https://www.spotify.com/us/download/linux/)
 
 curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
@@ -19,3 +19,8 @@ sudo chown -R name:name /usr/share/spotify
 # Spicetify Usage (Don't be a Super User!)
   spicetify update
   spicetify apply
+
+### UNINSTALL SPOTIFY ###
+sudo apt remove --purge spotify-client
+sudo apt autoremove
+rm -rf ~/.config/spotify ~/.cache/spotify (Delete user config)
