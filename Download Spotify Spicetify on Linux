@@ -7,12 +7,15 @@ sudo apt-get update && sudo apt-get install spotify-client
 
 ### SPICETIFY (Optional) ###
   Don't be a Super User
+
 # Download Spicetify
 curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh
 curl -fsSL https://raw.githubusercontent.com/spicetify/marketplace/main/resources/install.sh | sh
+
 # Problem Solving
 sudo chmod 777 /your/path/get/denied
 sudo chown -R name:name /usr/share/spotify
+
 # Spicetify Usage (Don't be a Super User!)
   spicetify update
   spicetify apply
